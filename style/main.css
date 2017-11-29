@@ -15,15 +15,36 @@
 	padding: 10px 0;
 	text-transform: uppercase;
 }
-.navbar-header {
+.clear {
+	clear: both;
+}
+.clear_our_mashines {
+	clear: both;
+}
+
+.nav__btn {
+	float: right;
+}
+.navbar-toggle{
 	position: relative;
+	border: none;
+	color: #00bbce;
+	background: #00bbce;
+}
+.icon-bar {
+	color: #00bbce;!important;
+
 }
 .navbar-brand {
 	position: absolute;
-	top: -37px;
+	top: -7px;
+}
+.nav .navbar-nav .navbar-right {
+	width: 70%;!important;
 }
 .navbar-collapse {
 	padding: 16px 0 !important;
+	border: none;
 }
 .navbar-inverse .navbar-nav>.active>a {
 	background: #fff;
@@ -47,7 +68,6 @@
 	width: 50%;
 	background-repeat: no-repeat;
 	display: inline-block;
-	background-size: 100%;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -100,15 +120,21 @@
 	text-transform: uppercase;
 }
 .services__name {
-	font-size: 18px;
+	font-size: 22px;
 	color: #5a5a5a;
 	padding-top: 27px;
 	padding-bottom: 20px;
+	text-align: center;
+	font-weight: bold;
+	line-height: 23px;
+	text-transform: uppercase;
 }
 .services__caption {
 	padding-bottom: 50px;
 	font-size: 14px;
 	color: #7e7e7e;
+	text-align: center;
+	line-height: 23px;
 }
 
 .company-info {
@@ -134,22 +160,89 @@
 .company-info__titte {
 	padding-top: 25px;
 }
+/*how-work*/
+.how-work {
+	position:relative;
+	padding-bottom:50px;
+}
+.how-work__title {
+	text-align: center;
+	font-size: 36px;
+	text-transform: uppercase;
+	color: #5a5a5a;
+	font-weight: 800;
+	padding-top: 80px;
+	padding-bottom: 50px;
+}
+
+.how-work__icon {
+	vertical-align: bottom;
+}
+/*our_mashines*/
+.our_mashines__right {
+	background: #f9ebd3;
+	width: 50%;
+	float: left;
+}
+
+.our_mashines__left {
+	background: url("../images/awer_mashins.jpg")no-repeat right;
+	width: 50%;
+	display: block;
+	width: 50%;
+	height: 100%;
+	background: #f2e4cc;
+	opacity: .7;
+	float: right;
+	font-size: 16px;
+	padding: 1px 50px;
+	line-height: 32px;
+	text-align: left;
+	overflow: hidden;
+}
+
+/*company-feature*/
+
 
 .company-feature__left {
 	display: inline-block;
 	vertical-align: top;
+	float: left;
 }
 .company-feature__right {
 	display: inline-block;
 	width: 80%;
 	margin-left: 20px;
+	float: right;
 }
 .company-feature__icon {
 	width: 50px;
 }
+.company-feature_h1 {
+	text-align: center;
+	font-size: 36px;
+	color: #5a5a5a;
+	padding-top: 90px;
+	text-transform: uppercase;
+}
+.company-feature__title {
+	font-size: 18px;
+	color: #5a5a5a;
+	text-align: left;
+	text-transform: uppercase;
+
+}
+.company-feature__item {
+	padding-top: 70px;
+}
+.company-feature__text {
+	font-size: 14px;
+	color: #7e7e7e;
+	font-weight: 200;
+}
 @media screen and (max-width: 991px) {
 	.navbar-brand {
-		/*переробити менюшку*/
+
 	}
 	.home .home__item {
 		width: 100%;
@@ -160,21 +253,64 @@
 		width: 100%;}
 }
 
-@media screen and (max-width: 776px) {
+@media screen and (max-width: 768px) {
 	.navbar-brand {
 		display: block;
 		height: 70%;
 	}
-	.navbar-brand>img {
-		width: 70%;
+	.company-feature__left {
+		height: 0;
 	}
 	.home__title {
-		font-size: 2.2em;
-	}
-
+	font-size: 2.2em;
+}
+	.nav .navbar-nav .navbar-right {
+	width: 70%;!important;
+}
+	.navbar-nav {
+	width: 70%;
+}
 
 }
 @media screen and (max-width: 426px) {
 	.company-info__text {
-		line-height: 25px}
+	line-height: 25px
+}
+
+}
+@media screen and (max-width: 750px) {
+	.navbar-brand>img {
+		width: 70%;
+	}
+	li.active {
+		display: none;
+	}
+	.clear {
+		clear: both;
+	}
+
+}
+@media screen and (max-width: 1008px) {
+	.navbar-nav {
+		width: 70%;
+	}
+	li.active {
+		display:block;
+	}
+}
+@media screen and (min-width: 1008px) {
+
+	li.active {
+		display: none;
+	}
+	.clear {
+		display: none;
+	}
+
+}
+@media screen and (min-width: 1250px){
+	li.active {
+		display:block;
+	}
+
 }
