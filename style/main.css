@@ -1,11 +1,18 @@
 /*reset*/
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
+body {
+	color: #5a5a5a ;
+}
 
 .header__top {
 	background: #00bbce;
 	height: 30px;
 	text-align: right;
 	padding-top: 7px;
+	padding-right: 4px;
+}
+.header__top a {
+	color: white;
 }
 .navbar-inverse {
 	background: #fff;
@@ -28,22 +35,18 @@
 .navbar-toggle{
 	position: relative;
 	border: none;
-	color: #00bbce;
+
 	background: #00bbce;
 }
 .icon-bar {
-	color: #00bbce;!important;
-
+	color: #00bbce;
 }
 .navbar-brand {
 	position: absolute;
 	top: -7px;
 }
-.nav .navbar-nav .navbar-right {
-	width: 70%;!important;
-}
 .navbar-collapse {
-	padding: 16px 0 !important;
+	padding-top: 16px;
 	border: none;
 }
 .navbar-inverse .navbar-nav>.active>a {
@@ -55,10 +58,6 @@
 	 color: #5a5a5a !important;
  }
 
-
-.navbar-nav>a:hover {
-
- }
 /*home block*/
 .home {
 	margin-top: 80px;
@@ -68,9 +67,6 @@
 	width: 50%;
 	background-repeat: no-repeat;
 	display: inline-block;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
 	background-size: cover;
 	vertical-align: top;
 	text-align: center;
@@ -85,8 +81,10 @@
 .btn-warning {
 	color: #012b30;
 	text-transform: uppercase;
-	padding: 12px 23px;
+	padding: 8px 23px;
 	background: #ffca25;
+	font-size: 14px;
+	font-weight: 300;
 }
 .home__caption {
 	text-transform: uppercase;
@@ -177,6 +175,7 @@
 
 .how-work__icon {
 	vertical-align: top;
+	display: table-caption;
 }
 .how-work__icon h4 {
 	font-size: 18px;
@@ -193,12 +192,17 @@
 	width: 50%;
 	float: left;
 	display: block;
+	margin: auto;
+	height: 518px;
+}
+.our_mashines__right__all {
 	font-size: 16px;
 	padding: 1px 50px;
 	line-height: 32px;
 	text-align: left;
 	overflow: hidden;
-	height: 518px;
+	display: block;
+	margin: auto;
 }
 
 .our_mashines__left {
@@ -207,12 +211,14 @@
 	height: 518px;
 	float: right;
 	display: block;
+	background-size: cover;
 }
 .our_mashines__text {
 	font-size: 16px;
 	color: #5a5a5a;
 	text-align: left;
 	padding: 10px 20px;
+	display: block;
 }
 .our_mashines__titte {
 	font-size: 36px;
@@ -265,7 +271,7 @@
 .form_bloc {
 	background: url("../images/bacgra_fut.jpg")no-repeat center;
 	background-size: cover;
-	height: 431px;
+	height: 470px;
 }
 .form-group {
 	width: 270px;
@@ -277,11 +283,76 @@
 .form-control {
 	background: #9ecbce;
 	opacity: 0.5;
+	color: white;
+	font-size: 14px;
+}
+.form-control:focus {
+	opacity: 1;
+}
+
+
+.form-bloc__form{
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 10px;
+	width: 20em
+}
+.form_bloc__btn {
+	padding-right: 40px;
+	padding-top: 25px;
+}
+
+.form_bloc__title {
+	text-align: center;
+	color: white;
+	font-size: 36px;
+	text-transform: uppercase;
+	padding-top: 47px;
 
 }
-.form_bloc__name{
+footer {
+	background: white;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	position: relative;
+	font-size: 14px;
+	color: #5a5a5a;
+}
+.footer__brand {
+	position: absolute;
+	top: -60px;
+	left: 0;
+	display: block;
+}
+.footer_addres {
+	text-align: center;
+	color: #5a5a5a;
+}
+.footer_addres__sity {
+	font-size: 24px;
+	font-weight: lighter;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
 
 }
+.footer_addres__streat {
+	font-size: 16px;
+}
+.footer_addres__conpany {
+	font-size: 14px;
+	padding-top: 25px;
+	vertical-align: bottom;
+}
+.footer-phone a {
+	color: #5a5a5a;
+	text-align: right;
+}
+.footer-phone {
+	text-align: right;
+	font-size: 14px;
+}
+
 /*media*/
 
 
@@ -325,19 +396,33 @@
 		background-size: cover;
 		height: 340px;
 	}
+	.how-work__arrow {
+		display: none;
+	}
 
 }
 @media screen and (max-width: 426px) {
 	.company-info__text {
 	line-height: 25px
-}
+	}
 	.our_mashines__right {
-		height: 340px;
+		height: 600px;
 		line-height: 24px;
 	}
-
+	.how-work__icon {
+		padding-left: 50%;
+	}
+	.form-bloc__form {
+		width: 20em;
+	}
+	.footer_addres__sity {
+		padding-top: 20px;
+	}
+	.footer-phone {
+		text-align: center;
+	}
 }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 768px) {
 	.navbar-brand>img {
 		width: 70%;
 	}
@@ -350,9 +435,8 @@
 
 }
 @media screen and (max-width: 1008px) {
-	.navbar-nav {
-		width: 70%;
-	}
+
+
 	li.active {
 		display:block;
 	}
@@ -371,5 +455,9 @@
 	li.active {
 		display:block;
 	}
+	.w {
+		display: none;
+	}
+
 
 }
