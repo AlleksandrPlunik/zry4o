@@ -120,7 +120,7 @@
 	text-transform: uppercase;
 }
 .services__name {
-	font-size: 22px;
+	font-size: 20px;
 	color: #5a5a5a;
 	padding-top: 27px;
 	padding-bottom: 20px;
@@ -131,10 +131,10 @@
 }
 .services__caption {
 	padding-bottom: 50px;
-	font-size: 14px;
+	font-size: 11px;
 	color: #7e7e7e;
 	text-align: center;
-	line-height: 23px;
+	line-height: 17px;
 }
 
 .company-info {
@@ -176,29 +176,49 @@
 }
 
 .how-work__icon {
-	vertical-align: bottom;
+	vertical-align: top;
+}
+.how-work__icon h4 {
+	font-size: 18px;
+	text-align: center;
+	color: #635e55;
+	text-transform: uppercase;
+}
+.how-work__arrow img {
+	vertical-align: top;
 }
 /*our_mashines*/
 .our_mashines__right {
 	background: #f9ebd3;
 	width: 50%;
 	float: left;
-}
-
-.our_mashines__left {
-	background: url("../images/awer_mashins.jpg")no-repeat right;
-	width: 50%;
 	display: block;
-	width: 50%;
-	height: 100%;
-	background: #f2e4cc;
-	opacity: .7;
-	float: right;
 	font-size: 16px;
 	padding: 1px 50px;
 	line-height: 32px;
 	text-align: left;
 	overflow: hidden;
+	height: 518px;
+}
+
+.our_mashines__left {
+	background: url("../images/awer_mashins.jpg")no-repeat right;
+	width: 50%;
+	height: 518px;
+	float: right;
+	display: block;
+}
+.our_mashines__text {
+	font-size: 16px;
+	color: #5a5a5a;
+	text-align: left;
+	padding: 10px 20px;
+}
+.our_mashines__titte {
+	font-size: 36px;
+	color: #5a5a5a;
+	text-align: left;
+	padding: 10px 20px;
 }
 
 /*company-feature*/
@@ -240,6 +260,32 @@
 	color: #7e7e7e;
 	font-weight: 200;
 }
+
+/*forb_bloc*/
+.form_bloc {
+	background: url("../images/bacgra_fut.jpg")no-repeat center;
+	background-size: cover;
+	height: 431px;
+}
+.form-group {
+	width: 270px;
+	height: 46px;
+	align-items: center;
+	text-align: center;
+
+}
+.form-control {
+	background: #9ecbce;
+	opacity: 0.5;
+
+}
+.form_bloc__name{
+
+}
+/*media*/
+
+
+
 @media screen and (max-width: 991px) {
 	.navbar-brand {
 
@@ -270,12 +316,25 @@
 	.navbar-nav {
 	width: 70%;
 }
+	.our_mashines__left {
+		width: 100%;
+		background-size: cover;
+	}
+	.our_mashines__right {
+		width: 100%;
+		background-size: cover;
+		height: 340px;
+	}
 
 }
 @media screen and (max-width: 426px) {
 	.company-info__text {
 	line-height: 25px
 }
+	.our_mashines__right {
+		height: 340px;
+		line-height: 24px;
+	}
 
 }
 @media screen and (max-width: 750px) {
