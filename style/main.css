@@ -452,6 +452,8 @@ footer {
 	.how-work__arrow {
 		display: none;
 	}
+	.nav>li>a>img {
+		max-width: 1px;}
 
 }
 @media screen and (max-width: 426px) {
@@ -463,7 +465,7 @@ footer {
 		line-height: 24px;
 	}
 	.how-work__icon {
-		
+
 	}
 	.form-bloc__form {
 		width: 20em;
@@ -473,6 +475,9 @@ footer {
 	}
 	.footer-phone {
 		text-align: center;
+	}
+	li.active {
+		display: block;
 	}
 }
 @media screen and (max-width: 768px) {
@@ -491,6 +496,8 @@ footer {
 	.clear {
 		clear: both;
 	}
+
+
 
 }
 @media screen and (max-width: 1008px) {
