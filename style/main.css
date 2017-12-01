@@ -3,6 +3,9 @@
 body {
 	color: #5a5a5a ;
 }
+a {
+	text-decoration: none;
+}
 
 .header__top {
 	background: #00bbce;
@@ -14,6 +17,9 @@ body {
 .header__top a {
 	color: white;
 }
+.nav>li>a {
+	padding: 10px 13px;
+}
 .navbar-inverse {
 	background: #fff;
 	text-transform: uppercase;
@@ -21,6 +27,9 @@ body {
 .nav-navbar {
 	padding: 10px 0;
 	text-transform: uppercase;
+}
+.navbar-header .navbar-collapse {
+	margin: auto!important;
 }
 .clear {
 	clear: both;
@@ -43,11 +52,13 @@ body {
 }
 .navbar-brand {
 	position: absolute;
-	top: -7px;
+	top: -55px;
+	display:block;
 }
 .navbar-collapse {
 	padding-top: 16px;
 	border: none;
+
 }
 .navbar-inverse .navbar-nav>.active>a {
 	background: #fff;
@@ -85,6 +96,16 @@ body {
 	background: #ffca25;
 	font-size: 14px;
 	font-weight: 300;
+	border: transparent;
+}
+.btn-warning:hover {
+	background: #ffdb6e!important;
+	border: transparent;
+	color: #012b30;
+}
+.btn-warning:active {
+	background: #e0b122;
+	color: #012b30;
 }
 .home__caption {
 	text-transform: uppercase;
@@ -96,12 +117,14 @@ body {
 	opacity: .9;
 }
 .home__item:nth-child(1) {
-	background-image: url("../images/bg_1.png");
+	background: url("../images/bg_1.png")no-repeat bottom center ;
+	background-size: cover;
 
 }
 .home__item:nth-child(2) {
 	margin-left: -5px;
-	background-image: url("../images/bg_2.png");
+	background: url("../images/bg_2.png")no-repeat bottom center;
+	background-size: cover;
 }
 /*servise bloc*/
 
@@ -112,10 +135,15 @@ body {
 	text-align: center;
 	font-size: 36px;
 	padding-top: 50px;
-	padding-bottom: 60px;
+	padding-bottom: 65px;
 	color: #5a5a5a;
 	font-weight: bold;
 	text-transform: uppercase;
+	position: relative;
+}
+#servis  {
+	position: absolute;
+	top:-50px;
 }
 .services__name {
 	font-size: 20px;
@@ -136,11 +164,10 @@ body {
 }
 
 .company-info {
-	background-image: url("../images/bacgraund_5.jpg");
+	background: url("../images/bacgraund_5.jpg")no-repeat bottom center;
 	height: 455px;
 	width: 100%;
 	background-size: cover;
-	background-repeat: no-repeat;
 }
 .company-info__text {
 	display: block;
@@ -171,11 +198,22 @@ body {
 	font-weight: 800;
 	padding-top: 80px;
 	padding-bottom: 50px;
+	position: relative;
+}
+#how {
+	position: absolute;
+	top:-40px;
 }
 
 .how-work__icon {
 	vertical-align: top;
-	display: table-caption;
+	display: block;
+	margin: 0 auto;
+}
+.how-work__icon img {
+	display: block;
+	margin: 0 auto;
+
 }
 .how-work__icon h4 {
 	font-size: 18px;
@@ -212,6 +250,11 @@ body {
 	float: right;
 	display: block;
 	background-size: cover;
+}
+.carousel-example-generic {
+	height: 518px;
+	background: white;
+
 }
 .our_mashines__text {
 	font-size: 16px;
@@ -282,7 +325,7 @@ body {
 }
 .form-control {
 	background: #9ecbce;
-	opacity: 0.5;
+	opacity: 0.9;
 	color: white;
 	font-size: 14px;
 }
@@ -321,8 +364,7 @@ footer {
 }
 .footer__brand {
 	position: absolute;
-	top: -60px;
-	left: 0;
+	top: -48px;
 	display: block;
 }
 .footer_addres {
@@ -352,13 +394,13 @@ footer {
 	text-align: right;
 	font-size: 14px;
 }
-
 /*media*/
 
 
 
 @media screen and (max-width: 991px) {
 	.navbar-brand {
+		display: none;
 
 	}
 	.home .home__item {
@@ -375,11 +417,21 @@ footer {
 		display: block;
 		height: 70%;
 	}
+	.footer__brand {
+		display: block;
+		height: 70%;
+	}
+	.home__item {
+		height: 500px;
+	}
 	.company-feature__left {
 		height: 0;
 	}
 	.home__title {
-	font-size: 2.2em;
+		font-size: 2.2em;
+		padding-top: 150px;
+		padding-bottom: 20px;
+
 }
 	.nav .navbar-nav .navbar-right {
 	width: 70%;!important;
@@ -395,6 +447,7 @@ footer {
 		width: 100%;
 		background-size: cover;
 		height: 340px;
+		text-align: center;
 	}
 	.how-work__arrow {
 		display: none;
@@ -410,7 +463,7 @@ footer {
 		line-height: 24px;
 	}
 	.how-work__icon {
-		padding-left: 50%;
+		
 	}
 	.form-bloc__form {
 		width: 20em;
@@ -424,6 +477,12 @@ footer {
 }
 @media screen and (max-width: 768px) {
 	.navbar-brand>img {
+		width: 130px;
+		visibility: visible;
+		position: absolute;
+		top: 64px;
+	}
+	.footer__brand>img{
 		width: 70%;
 	}
 	li.active {
@@ -435,19 +494,36 @@ footer {
 
 }
 @media screen and (max-width: 1008px) {
+	.our_mashines__text {
+		padding: 0;
+		overflow: hidden;
+		display: block;
+	}
+	.how-work__arrow {
+		display: none;
+	}
 
 
 	li.active {
-		display:block;
+		display: none;
 	}
+
 }
-@media screen and (min-width: 1008px) {
+@media screen and (min-width: 987px) {
 
 	li.active {
 		display: none;
 	}
 	.clear {
 		display: none;
+	}
+	nav .navbar-nav .navbar-right {
+		float: right;
+		width: 70%;
+	}
+	.navbar-brand {
+		display: none;
+
 	}
 
 }
@@ -457,6 +533,9 @@ footer {
 	}
 	.w {
 		display: none;
+	}
+	.our_mashines__text {
+		line-height: 39px;
 	}
 
 

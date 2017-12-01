@@ -21,38 +21,40 @@
 		</div>
 		<div class="container">
 			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-					<span class="icon-reorder"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand" href="#"><img src="images/logo.png" alt=""></a>
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+							<span class="icon-reorder"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+
+					</div>
+					<div class="navbar-collapse collapse">
+						<ul class="nav navbar-nav navbar-right">
+							<li><a class="navbar-brand" href="#"><img src="images/logo.png" alt=""></a></li>
+							<li class="active"><a href="#home">головна</a></li>
+							<li><a href="#servis">ПОСЛУГИ</a></li>
+							<li><a href="#how">Як ми працюємо</a></li>
+							<li><a href="#mashines">ОБЛАДНАННЯ</a></li>
+							<li><a href="#feature">Навіщо чистити?</a></li>
+							<li>
+								<button type="button" class="btn btn-warning nav__btn">замовити ЧИСТКУ</button>
+							</li>
+						</ul>
+					</div>
+				</div>
+		<a class="navbar-brand " href="#"><img src="images/logo.png" alt=""></a>
 			</div>
-			<div class="navbar-collapse collapse">
-				<ul class="nav navbar-nav navbar-right">
-					<li class="active"><a href="">головна</a></li>
-					<li><a href="">ПОСЛУГИ</a></li>
-					<li><a href="">Як ми працюємо</a></li>
-					<li><a href="">ОБЛАДНАННЯ</a></li>
-					<li><a href="">Навіщо чистити?</a></li>
-					<li>
-						<button type="button" class="btn btn-warning nav__btn">замовити ЧИСТКУ</button>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</div>
 </header>
 <main>
 	<div class="home">
-		<div class="home__item">
+		<div class="home__item " id="home">
 			<h1 class="home__title">ХІМЧИСТКА <br> одягу</h1>
 			<p class="home__caption">Ми дбаємо про одяг, який ви одягаєте</p>
 			<button type="button" class="btn btn-warning">замовити ЧИСТКУ</button>
 		</div>
 		<div class="home__item">
 			<h1 class="home__title">ХІМЧИСТКА <br>КИЛИМІВ</h1>
-			<p class="home__caption">Ми дбаємо про одяг, який ви одягаєте</p>
+			<p class="home__caption">чистка килимів всіх видів та розмірів</p>
 			<button type="button" class="btn btn-warning">замовити ЧИСТКУ</button>
 		</div>
 	</div>
@@ -60,7 +62,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12">
-					<h1 class="services__title">Послуги по чистці</h1>
+					<h1 class="services__title">Послуги по чистці <p id="servis"></p></h1>
 				</div>
 			</div>
 			<div class="row">
@@ -140,9 +142,10 @@
 		</div>
 	</div>
 	<div class="how-work">
-		<div class="how-work__title">Як ми працюємо</div>
+		<div class="how-work__title">Як ми працюємо <p id="how"></p></div>
 		<div class="ccontainer-fluid">
 			<div class="row">
+
 				<div class="col-sm-1 col-xs-12 how-work__arrow w "></div>
 				<div class="col-sm-2 col-xs-12 col-lg-offset-1  ">
 					<div class="how-work__icon">
@@ -177,7 +180,7 @@
 				</div>
 				<div class="col-sm-1 col-xs-12">
 					<div class="how-work__icon">
-						<img src="images/icons_services_4.png" alt=""><h4>доставка додому</h4>
+						<img src="images/icons_services_4.png" alt=""><h4 id="mashines">доставка додому</h4>
 					</div>
 				</div>
 			</div>
@@ -200,163 +203,172 @@
 		</div>
 		<div class="our_mashines__left">
 		</div>
-	</div>
-	<div class="clear_our_mashines"></div>
-	<div class="company-feature">
-		<div class="company-feature_h1">Навіщо чистити професійно?</div>
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-6 col-xs-12">
-					<div class="company-feature__item">
-						<div class="company-feature__left">
-							<img class="company-feature__icon" src="images/futyre_icon.png" alt="">
+		<div class="clear_our_mashines" id="feature"></div>
+		<div class="company-feature">
+			<div class="company-feature_h1">Навіщо чистити професійно?</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6 col-xs-12">
+						<div class="company-feature__item">
+							<div class="company-feature__left">
+								<img class="company-feature__icon" src="images/icons_feature_01.png" alt="">
+							</div>
+							<div class="company-feature__right">
+								<div class="company-feature__title">Захист від бактерій та мікробів</div>
+								<div class="company-feature__text">Брудний килим не тільки зіпсує настрій і враження, а й може стати
+									рознощиком хвороботворних бактерій і вірусів.
+									Регулярна хімчистка килимів і килимових покриттів здатна продовжити термін служби і підтримувати
+									привабливий вигляд
+									покриття багато років. Просто прибирання пилососом, навіть самим потужним, не зможе прибрати весь пил
+									і бруд.
+								</div>
+							</div>
 						</div>
-						<div class="company-feature__right">
-							<div class="company-feature__title">Про нас</div>
-							<div class="company-feature__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores,
-								autem distinctio dolor dolore doloribus, earum id laboriosam natus neque quaerat quas qui quo ratione
-								reiciendis rem sint suscipit unde vero.
+					</div>
+					<div class="col-sm-6 col-xs-12">
+						<div class="company-feature__item">
+							<div class="company-feature__left">
+								<img class="company-feature__icon" src="images/icons_feature_02.png" alt="">
+							</div>
+							<div class="company-feature__right">
+								<div class="company-feature__title">профілактика пилових кліщів</div>
+								<div class="company-feature__text">
+									Пилові кліщі живуть у кожному будинку і квартирі, на домашньому одязі та постільній білизні. Коли
+									людина сідає або лягає на ліжко, в повітря піднімається мільйони частинок пилу, яка складається з
+									пилового кліща. За допомогою спеціального обладнання парою під великим тиском ми позбуваємось кліщів
+									та інших бактерій.
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="col-sm-6 col-xs-12">
-					<div class="company-feature__item">
-						<div class="company-feature__left">
-							<img class="company-feature__icon" src="images/futyre_icon.png" alt="">
+				<div class="row">
+					<div class="col-sm-6 col-xs-12">
+						<div class="company-feature__item">
+							<div class="company-feature__left">
+								<img class="company-feature__icon" src="images/icons_feature_03.png" alt="">
+							</div>
+							<div class="company-feature__right">
+								<div class="company-feature__title">видаляємо алергени</div>
+								<div class="company-feature__text">
+									Брудні килими також сприяють розвитку алергії та її загостренню. Чистку килимів потрібно проводити
+									регулярно, щоб не допустити накопиченню шерсті тварин та інших алергенів. Чистку можна проводити як із
+									застосуванням професійних миючих засобів, так і антиалергенним.
+								</div>
+							</div>
 						</div>
-						<div class="company-feature__right">
-							<div class="company-feature__title">Про нас</div>
-							<div class="company-feature__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores,
-								autem distinctio dolor dolore doloribus, earum id laboriosam natus neque quaerat quas qui quo ratione
-								reiciendis rem sint suscipit unde vero.
+					</div>
+					<div class="col-sm-6 col-xs-12">
+						<div class="company-feature__item">
+							<div class="company-feature__left">
+								<img class="company-feature__icon" src="images/icons_feature_04.png" alt="">
+							</div>
+							<div class="company-feature__right">
+								<div class="company-feature__title">видаляємо бруд та плями</div>
+								<div class="company-feature__text">
+									Під час чистки килима піноутворююча речовина у вигляді водного розчину втирається у килим, після чого
+									видаляється за допомогою спеціального обладнання. Наступним кроком є сушка килими у спеціальних
+									температурних умовах, щоб не деформувати його форми.
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-			<div class="row">
-				<div class="col-sm-6 col-xs-12">
-					<div class="company-feature__item">
-						<div class="company-feature__left">
-							<img class="company-feature__icon" src="images/futyre_icon.png" alt="">
+				<div class="row">
+					<div class="col-sm-6 col-xs-12">
+						<div class="company-feature__item">
+							<div class="company-feature__left">
+								<img class="company-feature__icon" src="images/icons_feature_05.png" alt="">
+							</div>
+							<div class="company-feature__right">
+								<div class="company-feature__title">Небезпечні іграшки</div>
+								<div class="company-feature__text">
+									Якщо не доглядати за дитячими іграшками як слід, у них почнуть заводитися мікроби, бактерії і пилові
+									кліщі. Це особливо важливо для іграшок, якими ваш малюк постійно грається.
+									Брудні іграшки також сприяють розвитку алергії.
+								</div>
+							</div>
 						</div>
-						<div class="company-feature__right">
-							<div class="company-feature__title">Про нас</div>
-							<div class="company-feature__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores,
-								autem distinctio dolor dolore doloribus, earum id laboriosam natus neque quaerat quas qui quo ratione
-								reiciendis rem sint suscipit unde vero.
+					</div>
+					<div class="col-sm-6 col-xs-12">
+						<div class="company-feature__item">
+							<div class="company-feature__left">
+								<img class="company-feature__icon" src="images/icons_feature_06.png" alt="">
+							</div>
+							<div class="company-feature__right">
+								<div class="company-feature__title">Ваш килим непривабливий?</div>
+								<div class="company-feature__text">
+									Грамотне чищення килима дозволить повернути йому гарний вигляд і приємний відтінок, втрачений роками
+									експлуатації. Хімчистка килимових покриттів здатна не тільки покращити їх зовнішній вигляд, а й
+									суттєво продовжити термін експлуатації.
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="col-sm-6 col-xs-12">
-					<div class="company-feature__item">
-						<div class="company-feature__left">
-							<img class="company-feature__icon" src="images/futyre_icon.png" alt="">
-						</div>
-						<div class="company-feature__right">
-							<div class="company-feature__title">Про нас</div>
-							<div class="company-feature__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores,
-								autem distinctio dolor dolore doloribus, earum id laboriosam natus neque quaerat quas qui quo ratione
-								reiciendis rem sint suscipit unde vero.
+				<div class="row">
+					<div class="col-sm-6 col-xs-12">
+						<div class="company-feature__item">
+							<div class="company-feature__left">
+								<img class="company-feature__icon" src="images/icons_feature_07.png" alt="">
+							</div>
+							<div class="company-feature__right">
+								<div class="company-feature__title">Шкіряні речі втратили вигляд?</div>
+								<div class="company-feature__text">Речам, які виготовлені з натуральної шкіри властиво вбирати в себе
+									різні запахи, забруднення і пил. Від них практично не можливо позбутися в домашніх умовах.
+									Потрібні якісні та надійні засоби, яким не під силу спровокувати пошкодження речей, які обробляються.
+								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-sm-6 col-xs-12">
-					<div class="company-feature__item">
-						<div class="company-feature__left">
-							<img class="company-feature__icon" src="images/futyre_icon.png" alt="">
-						</div>
-						<div class="company-feature__right">
-							<div class="company-feature__title">Про нас</div>
-							<div class="company-feature__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores,
-								autem distinctio dolor dolore doloribus, earum id laboriosam natus neque quaerat quas qui quo ratione
-								reiciendis rem sint suscipit unde vero.
+					<div class="col-sm-6 col-xs-12">
+						<div class="company-feature__item">
+							<div class="company-feature__left">
+								<img class="company-feature__icon" src="images/icons_feature_08.png" alt="">
 							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-sm-6 col-xs-12">
-					<div class="company-feature__item">
-						<div class="company-feature__left">
-							<img class="company-feature__icon" src="images/futyre_icon.png" alt="">
-						</div>
-						<div class="company-feature__right">
-							<div class="company-feature__title">Про нас</div>
-							<div class="company-feature__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores,
-								autem distinctio dolor dolore doloribus, earum id laboriosam natus neque quaerat quas qui quo ratione
-								reiciendis rem sint suscipit unde vero.
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-sm-6 col-xs-12">
-					<div class="company-feature__item">
-						<div class="company-feature__left">
-							<img class="company-feature__icon" src="images/futyre_icon.png" alt="">
-						</div>
-						<div class="company-feature__right">
-							<div class="company-feature__title">Про нас</div>
-							<div class="company-feature__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores,
-								autem distinctio dolor dolore doloribus, earum id laboriosam natus neque quaerat quas qui quo ratione
-								reiciendis rem sint suscipit unde vero.
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-sm-6 col-xs-12">
-					<div class="company-feature__item">
-						<div class="company-feature__left">
-							<img class="company-feature__icon" src="images/futyre_icon.png" alt="">
-						</div>
-						<div class="company-feature__right">
-							<div class="company-feature__title">Про нас</div>
-							<div class="company-feature__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores,
-								autem distinctio dolor dolore doloribus, earum id laboriosam natus neque quaerat quas qui quo ratione
-								reiciendis rem sint suscipit unde vero.
+							<div class="company-feature__right">
+								<div class="company-feature__title">Тьмяне хутро</div>
+								<div class="company-feature__text">Процедура хімічної очистки хутряних виробів ефективна і корисна для
+									будь-якого типу хутра, проводити її необхідно регулярно і своєчасно.
+									Хімчистка надає волоссю блиск, пружність, що позначається на довговічності хутряних виробів.
+									Хутряні вироби обробляються спеціальним складом, який протягом 2-3 років оберігає хутряні вироби від
+									молі.
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-	<div class="form_bloc">
-		<h1 class="form_bloc__title">Професійна хімчистка <br>
-			килимів та одягу</h1>
-		<form class="form-bloc__form">
-			<div class="form-group">
-				<label for="mail" class=" control-label"></label>
-				<div class="form_bloc__name">
-					<input type="name" class="form-control" id="mail" placeholder="Ім’я">
+		<div class="form_bloc">
+			<h1 class="form_bloc__title">Професійна хімчистка <br>
+				килимів та одягу</h1>
+			<form class="form-bloc__form">
+				<div class="form-group">
+					<label for="mail" class=" control-label"></label>
+					<div class="form_bloc__name">
+						<input type="name" class="form-control" id="mail" placeholder="Ім’я">
+					</div>
 				</div>
-			</div>
-			<div class="form-group">
-				<label for="phone" class="control-label"></label>
-				<div class="form_bloc__phone">
-					<input type="phone" class="form-control" id="phone" placeholder="Номер телефону">
+				<div class="form-group">
+					<label for="phone" class="control-label"></label>
+					<div class="form_bloc__phone">
+						<input type="phone" class="form-control" id="phone" placeholder="Номер телефону">
+					</div>
 				</div>
-			</div>
-			<div class="form-group">
-				<div class="form_bloc__btn">
-					<button type="submit" class="btn btn-warning nav__btn">замовити ЧИСТКУ</button>
+				<div class="form-group">
+					<div class="form_bloc__btn">
+						<button type="submit" class="btn btn-warning nav__btn">замовити ЧИСТКУ</button>
+					</div>
 				</div>
-			</div>
-		</form>
-	</div>
-
+			</form>
+		</div>
 </main>
 <footer>
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-4">
-				<a class="navbar-brand footer__brand" href="#"><img src="images/logo.png" alt=""></a>
+				<a class="footer__brand" href="#"><img src="images/logo.png" alt=""></a>
 			</div>
 			<div class="col-sm-4">
 				<div class="footer_addres">
@@ -371,7 +383,7 @@
 						<a class="phone" href="tel:+380984878885"><i class="fa fa-phone"> </i> +38 098 487 88 85</a>
 						<a class="instagram" href=""><i class="fa fa-instagram"></i></a>
 					</div>
-					<div class="footer_mail"><i class="fa fa-mail-forward"></i>
+					<div class="footer_mail"><i class="fa fa-envelope"></i>
 						<a class="footer_mail__zruchno" href="">zruchno-vam@gmail.com</a>
 					</div>
 				</div>
